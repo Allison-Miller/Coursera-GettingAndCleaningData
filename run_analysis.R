@@ -64,7 +64,7 @@ c <- gsub("std","Std", b)
 #Correct the variables with "BodyBody" to read just "Body"
 d <- gsub("BodyBody", "Body", c)
 #Apply the above changes to the meanSD data frame
-names(meanSD) <- as.character(w) 
+names(meanSD) <- as.character(d) 
 
 # 5) Create a second, independent tidy data set with the average of each variable for each activity and each subject. I am choosing to "melt" the data using the reshape 2 package
 #Use the aggregate() function to calculate the mean of each variable per subject per activity
